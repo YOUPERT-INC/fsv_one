@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Use case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Style.css -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<%- include('common_header.ejs') %>
+  <main>
+    <div class="container">
+        <h1 class="page-title" id="usecasettl">
+          Use case : API player
+        </h1>
+        <img class="img-fluid img-thumbnail" src="img/apiplayer.png" />
+        <div class="mt-4">
+          <p id="usecasettl1">
+              API player is a open source media player streaming any video & audio files fetched by open API.
+          </p>
+          <p id="usecasettl2">
+            A user can edit code for integration with the API in settings menu.
+          </p>
+          <p id="usecasettl3">
+            Below is a sample code for integration with FSV API.
+          </p>
+          <p id="usecasettl4">
+              Follow this step to test how it works.
+          </p>
+        </div>
+    </div>
+
+    <section class="api-player-step">
+      <div class="container">
+        <p id="append-h3"></p>
+        <ul class="list-inline mt-2">
+          <li class="list-inline-item">
+            <a href="javascript:void(0)">
+              <img src="img/w10.png" height="50" />
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="javascript:void(0)">
+              <img src="img/mac.png" height="50" />
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="javascript:void(0)">
+              <img src="img/ubuntu.png" height="50" />
+            </a>
+          </li>
+        </ul>
+
+        <h3 id="usecasettl7">2. Click the button below.</h3>
+        <a href="javascript:void(0)" class="btn btn-theme js-copy" id="usecasettl8">
+          Copy API integration code
+        </a>
+        <span class="js-content" style="display: none;">Copy Content Here</span>
+
+        <h3 id="usecasettl9">3. Go to settings - Edit API integration and paste the code.</h3>
+        <p id="usecasettl10">
+          If some other code already exist, pleasce back up in advance.
+        </p>
+        <p class="mt-4" id="usecasettl11">
+          Now, you have your own media player! Enjoy it.
+        </p>
+      </div>
+    </section>
+
+  </main>
+  <%- include('common_footer.ejs') %>
+<script src="js/usecase.js"></script>
+</body>
+</html>

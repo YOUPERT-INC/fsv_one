@@ -1,0 +1,1 @@
+Fsv.one is an open database for all creators like you. Its API is always free of charge and you can even download its source code to build a website like us. But please let us know if you’ve built a website using our source code. Your website will be listed as a partner site in our website. Please feel free to ask me at any time with kind manner. Enjoy your day!

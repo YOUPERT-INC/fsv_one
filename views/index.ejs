@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FSV</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <!-- Style.css -->
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <%- include('common_header.ejs') %>
+  <main class="pb-0">
+    <div class="container">
+      <div class="about-content">
+        <h1 class="page-title text-center" id="freestock">
+          Free Stock Videos
+        </h1>
+        <h2 class="text-center" id="opendb">
+          Open database for all creators
+        </h2>
+      </div>
+    </div>
+
+    <section class="about-site">
+      <div class="container">
+        <div class="row d-sm-flex">
+          <div class="col-sm-4 d-sm-flex">
+            <div class="white-box" >
+              <h3 id="h3text001">Archive of free stock videos</h3>
+              <p id="ptext001">
+                Over 1 mil. hyperlinks to free videos and their thumbnail, cover, snapshot images are stored at FSV database.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-4 d-sm-flex">
+            <div class="white-box">
+              <h3 id="h3text002">Open API for all users</h3>
+              <p id="ptext002">
+                Whether you're individual or business user, FSV API is always free of charge. But please make sure to attribute your work to FSV API.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-4 d-sm-flex">
+            <div class="white-box">
+              <h3 id="h3text003">Built by volunteers</h3>
+              <p id="ptext003">
+                FSV has been and will be built by volunteers who create and share high quality videos. Please join in our team with simple sign up by your email.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <%- include('common_footer.ejs') %>
+  <script type="text/javascript">
+      $(document).ready(function(){
+          checklang();
+          var currenturl = window.location.href;
+          currenturl = currenturl.substring(currenturl.lastIndexOf('/') + 1);
+          currenturl = "/";
+          checkLogin(currenturl);
+      });
+  </script>
+</body>
+</html>

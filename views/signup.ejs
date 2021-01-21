@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sign up</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+  <!-- Style.css -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-body">
+  <div id="myDiv" style="display:none;">
+    <div class="loader"></div>
+  </div>
+  <%- include('common_header.ejs') %>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3 col-sm-8 offset-sm-2">
+          <div class="login-signup-box">
+            <h1 class="page-title" id="tlsignup">Signup</h1>
+            <div class="white-box">
+              <div class="alert alert-success" style="display: none;">
+                <label class="mb-0" id="success-message"></label>
+              </div>
+              <div class="alert alert-danger"  style="display: none;">
+                <label class="mb-0" id="error-message"></label>
+              </div>
+              <form action="" method="POST" id="signupform">
+                <div class="form-group">
+                  <label id="emailttl">Email </label><em class="star">*</em>
+                  <input type="email" class="form-control" placeholder="" name="email" id="email" >
+                </div>
+                <div class="form-group">
+                  <label id="signpasswordttl">Password (at least 8 characters) </label><em class="star">*</em>
+                  <input type="password" class="form-control" minlength="8" placeholder="" name="password" id="pwd" >
+                </div>
+                <div class="form-group">
+                  <label id="confimpwdttl">Confirm password </label><em class="star">*</em>
+                  <input type="password" class="form-control" minlength="8" placeholder="" name="cpwd" id="cpwd" >
+                  <span id="pwd-val-message" style="display: none;color: red"></span>
+                </div>
+                <div class="form-group">
+                  <label id="namettl">Name (Optional)</label>
+                  <input type="text" class="form-control" placeholder="" name="name" id="name">
+                </div>
+                <div class="form-group">
+                  <div id="recaptcha1"></div>
+                </div>
+                <!-- <a href="signup-success.html" class="btn btn-theme btn-block">Sign Up
+                </a> -->
+                <button class="btn btn-theme btn-block" id="signup">Sign Up</button>
+              </form>
+            </div>
+            <ul class="list-inline mb-0 text-center">
+              <li class="list-inline-item">
+                <a href="/terms" class="text-link mt-3 d-block" id="terms">Terms & Condition</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="/privacy" class="text-link mt-3 d-block" id="privacy">Privacy policy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/frontconstant.min.js"></script>
+<script src="js/valid.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/signuppage.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+</body>
+</html>

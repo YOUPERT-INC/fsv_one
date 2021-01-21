@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Open source</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<%- include('common_header.ejs') %>
+  <main class="pb-0">
+    <div class="container">
+      <div class="about-content">
+        <h1 class="page-title text-center" id="os_ttl">
+          Open source
+        </h1>
+        <h2 class="text-center" id="os_subttl">
+          We share the source code of our website with anyone. Most importantly, it's free.
+        </h2>
+        <div class="text-center" style="margin-top: 30px">
+          <img src="img/gitimage.png" alt="Git" style="width: 15%;height: 15%">
+          <button id="os_subttl1" class="btn btn-theme" style="margin-left: 30px;">Go to our repository. It's 100% free!</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="margin-top: 30px">
+      <div class="row">
+        <div class="col-sm-12">
+            <h4 id="os_h4ttl1">Is it really free?</h4>
+            <p id="os_h4ttl2" style="color: #8a8181;font-weight: bold;">
+              YES. Our website has been built for purely academic research purpose. So we're pleased to share its source code with anyone who wants to build a media database at the lowest cost ever.</p>
+        </div>
+        <div class="col-sm-12">
+            <h4 id="os_h4ttl3">I want to build a website as you did. But I don’t have knowledge or skills.</h4>
+            <p id="os_h4ttl4" style="color: #8a8181;font-weight: bold;">
+              You can hire a full stack developer who can set up a server, modify source code and publish a website.<br>Usually it would not cost more than $300 if you find a proper one from Upwork or Fiverr.</p>
+        </div>
+        <div class="col-sm-12">
+            <h4 id="os_h4ttl5">This is awesome! I want to donate to you. But how?</h4>
+            <p id="os_h4ttl6" style="color: #8a8181;font-weight: bold;">
+              I definitely knew you were considering it. It's deadly simple. Just click the button below to send us email.<br>We will send you an invoice and Paypal link according to the amount you want to donate.</p>
+        </div>
+        <div class="col-sm-12" style="margin-bottom: 20px">
+          <button id="os_h4ttl7" class="btn btn-theme" style="margin-top: 30px;" onclick="window.location.href='mailto:support@fsv.one';">Donation is always welcome!</button>
+        </div>
+      </div>
+    </div>
+  </main>
+<%- include('common_footer.ejs') %>
+</body>
+<script src="js/opensourcepage.js"></script>
+</body>
+</html>
